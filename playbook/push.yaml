@@ -3,11 +3,11 @@
   hosts: ansible_host
   tasks:
   - name: remove image
-    command: docker rmi deyiho2401/my-hello-world
+#    command: docker rmi saria2020/my-hello-world
     ignore_errors: true
   - name: build image
-    command: docker build -t deyiho2401/my-hello-world ~/hello-world
+    command: docker build -t saria2020/my-hello-world ~/hello-world
 #  - name: docker login
 #    command: docker login -u saria2020 -p 
   - name: push image
-    command: docker push saria2020/java-hello-world:tagname
+    command: docker push saria2020/java-hello-world:latest
