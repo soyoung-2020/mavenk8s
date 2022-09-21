@@ -8,6 +8,6 @@
   - name: build image
     command: docker build -t deyiho2401/my-hello-world ~/hello-world
 #  - name: docker login
-#    command: docker login -u saria2020 -p DlsrhdwlsmdGhkfdyd0922^^
+#    command: docker login -u saria2020 -p 
   - name: push image
     command: docker push saria2020/java-hello-world:tagname
